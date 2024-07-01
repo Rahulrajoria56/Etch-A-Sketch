@@ -26,6 +26,9 @@ function checkForRainbow(){
     if(rainbowCheck == true){
         rainbowMode();
     }
+    else{
+        userColor = colorPicker.value;
+    }
 }
 
 function clearCanvas(input) {
@@ -72,7 +75,7 @@ createButton.addEventListener('click', (event)=> {
         createCanvas(userinput);
     }
     else{
-        alert("grid value cannot be less than 2 or more than 100");
+        alert("Grid value cannot be less than 2 or more than 100");
     }
 })
 clearButton.addEventListener('click', ()=> {
